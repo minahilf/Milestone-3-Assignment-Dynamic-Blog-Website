@@ -4,7 +4,7 @@ import Comment from "@/app/Comment/page";
 
 export default async function Blog_Detail({ params }: { params: { id: string } }) {
   const blog_id = parseInt(params.id);
-  const blogsdata = blog.find((blog: any) => blog.id === blog_id);
+  const blogsdata = blog.find((blog) => blog.id === blog_id);
 
   if (!blogsdata) {
     return <p>Blog not found!</p>;

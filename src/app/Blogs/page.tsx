@@ -11,7 +11,7 @@ export default function Blogs() {
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:ml-8">
-        {blog.map((item: any) => (
+        {blog.map((item) => (
           <div key={item.id} className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white">
             <Image
               src={item.image}
